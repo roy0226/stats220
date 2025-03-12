@@ -9,6 +9,6 @@
 
 *My hands are shaking from all this (ah, ha, ha, ha)*
 
-![](https://www.taylorswift.com)
+https://www.taylorswift.com
 
 ![](https://media1.tenor.com/m/RiBayKt0-fkAAAAC/teffy-taylor-swift.gif)
