@@ -11,4 +11,4 @@
 
 ![](https://www.taylorswift.com)
 
-A meme that captures how I currently feel about my university studies is ![](https://media1.tenor.com/m/RiBayKt0-fkAAAAC/teffy-taylor-swift.gif)
+![](https://media1.tenor.com/m/RiBayKt0-fkAAAAC/teffy-taylor-swift.gif)
