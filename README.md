@@ -1,13 +1,13 @@
-# Our secret moments in your crowded room
-### They got no idea about me and you
-- There is an indentation in the shape of you
-- - Made your mark on me, a golden tattoo
-1) All of this silence and patience, pining in anticipation
-2) My hands are shaking from holding back from you (ah, ah, ah)
+# Say you'll remember me
+### Standing in a nice dress
+- Staring at the sunset, babe
+- - Red lips and rosy cheeks
+1) Say you'll see me again
+2) Even if it's just in your wildest dreams, ah-ah, ha (ha-ah, ha)
 
-**All of this silence and patience, pining and desperately waiting**
+**Wildest dreams, ah-ah, ha**
 
-*My hands are shaking from all this (ah, ha, ha, ha)*
+*You'll see me in hindsight*
 
 https://www.taylorswift.com
 
