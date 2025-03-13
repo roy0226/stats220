@@ -1,13 +1,13 @@
-# Say you'll remember me
-## Standing in a nice dress
-- Staring at the sunset, babe
-- - Red lips and rosy cheeks
-1) Say you'll see me again
-2) Even if it's just in your wildest dreams, ah-ah, ha (ha-ah, ha)
+# 'Cause I knew you were trouble when you walked in
+## So shame on me now
+- Flew me to places I'd never been
+- - 'Til you put me down, oh
+1) I knew you were trouble when you walked in
+2) So, shame on me now
 
-**Wildest dreams, ah-ah, ha**
+**Flew me to places I'd never been**
 
-*You'll see me in hindsight*
+*Now I'm lyin' on the cold hard ground*
 
 https://www.taylorswift.com
 
