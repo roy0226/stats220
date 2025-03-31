@@ -9,19 +9,48 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 ```
 
 ```{css}
-
+h1, h2, h3, h4, h5 {
+  color: #F0F68C;
+  background-color: #23435F; 
+  padding: 10px;
+}
 ```
 
-## What's going on with this data?
+## Housing analysis on Rahiri Rd
 
-You need to change the contents of this Rmd! Replace the R code and markdown give below in this template document.
+For my project I have looked at property traits of houses on my street. The variables I've decided to look at are color, style, number of stories and number of dwellings per section
 
 ```{r}
-pets <- c("cat", "dog", "turtle", "rabbit")
-best_pet <- pets[1]
+library(tidyverse)
+library(GGally)
 
+logged_data <- read_csv("data.csv")
+latest_data <- logged_data %>%
+  select(-1) %>%     
+  rename(colour = 1,
+         style = 2,
+         stories = 3,
+         dwellings = 4)
+
+ggplot(latest_data, aes(x = stories)) +
+  geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
+  labs(title = "Number of house stories", x = "Stories", y = "Count") +
+  theme_minimal()
 ```
 
-The best pet to have is a `r best_pet` of course!
+```{r}
+ggplot(latest_data, aes(x = dwellings)) +
+  geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
+  labs(title = "Number of dwellings per section", x = "Dwellings", y = "Count") +
+  theme_minimal()
+```
 
-![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
+```{r}
+stories=round(mean(latest_data$stories), 2)
+dwellings=round(mean(latest_data$dwellings), 2)
+```
+
+The mean stories in a house is `r stories`
+
+The mean number of dwellings on a section is `r dwellings`
+
