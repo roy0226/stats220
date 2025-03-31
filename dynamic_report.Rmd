@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5 {
   color: #F0F68C;
   background-color: #23435F; 
   padding: 10px;
+  font-family: 'Helvetica'
 }
 ```
 
@@ -24,24 +25,13 @@ For my project I have looked at property traits of houses on my street. The vari
 library(tidyverse)
 library(GGally)
 
-latest_data <- data.frame(
-  colour = c("White", "White", "Beige", "White", "Grey", "White", "Other/Multi", "Black", "White", "Beige",
-             "Grey", "White", "Beige", "Grey", "Beige", "Grey", "Other/Multi", "Other/Multi", "Other/Multi", "Blue",
-             "Grey", "Other/Multi", "White", "Other/Multi", "Other/Multi", "White", "Other/Multi", "Black", "Blue", "Other/Multi",
-             "Other/Multi", "White", "Grey", "Beige", "Black"),
-  style = c("Traditional", "Traditional", "Traditional", "Traditional", "Traditional", "Traditional", "Other", "Traditional", "Modern", "Traditional",
-            "Other", "Traditional", "Traditional", "Traditional", "Traditional", "Traditional", "Other", "Modern", "Traditional", "Traditional",
-            "Traditional", "Traditional", "Other", "Traditional", "Traditional", "Traditional", "Traditional", "Traditional", "Traditional", "Traditional",
-            "Other", "Traditional", "Traditional", "Traditional", "Traditional"),
-  stories = c(3, 2, 3, 2, 2, 2, 2, 2, 3, 2,
-              2, 2, 3, 2, 2, 2, 2, 3, 2, 2,
-              1, 1, 2, 2, 2, 1, 2, 3, 3, 3,
-              2, 2, 2, 2, 2),
-  dwellings = c(1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1, 1, 3, 5, 3, 1,
-                1, 1, 1, 1, 2, 1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1)
-)
+logged_data <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQf8FIyprjqoJPx655uokFuapFssaVeUPg2TPBSOYer3mpzn0kStyq2s3RnW6zp2-mw3nbQ_mvs90XD/pub?gid=1571032972&single=true&output=csv")
+latest_data <- logged_data %>%
+  select(-1) %>%     
+  rename(colour = 1,
+         style = 2,
+         stories = 3,
+         dwellings = 4)
 
 ggplot(latest_data, aes(x = stories)) +
   geom_histogram(binwidth = 1, fill = "lightblue", color = "black") +
